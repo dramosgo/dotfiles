@@ -1,0 +1,3 @@
+
+--restrict-filenames -o ~/Videos/%(title)s-%(id)s.%(ext)s
+
