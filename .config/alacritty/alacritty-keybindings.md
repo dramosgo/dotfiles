@@ -1,0 +1,155 @@
+NAME
+Alacritty Bindings - Default configuration file bindings.
+
+SYNOPSIS
+This page documents all key and mouse bindings for the default Alacritty configuration. See alacritty(5) for full configuration format documentation.
+
+MOUSE BINDINGS
+mouse	mods	action
+"Right"		"ExpandSelection"
+"Right"	"Control"	"ExpandSelection"
+"Middle"	"~Vi"	"PasteSelection"
+KEY BINDINGS
+key	mods	mode	action / chars
+"Paste"			"Paste"
+"Copy"			"Copy"
+"L"	"Control"		"ClearLogNotice"
+"Paste"		"Vi|Search"	"Paste"
+"L"	"Control"	"~Vi|~Search"	chars: "\u000c"
+"PageUp"	"Shift"	"~Alt"	"ScrollPageUp"
+"PageDown"	"Shift"	"~Alt"	"ScrollPageDown"
+"Home"	"Shift"	"~Alt"	"ScrollToTop"
+"End"	"Shift"	"~Alt"	"ScrollToBottom"
+Vi Mode
+key	mods	mode	action
+"Space"	"Shift|Control"	"~Search"	"ToggleViMode"
+"Space"	"Shift|Control"	"Vi|~Search"	"ScrollToBottom"
+"Escape"		"Vi|~Search"	"ClearSelection"
+"I"		"Vi|~Search"	"ToggleViMode"
+"I"		"Vi|~Search"	"ScrollToBottom"
+"C"	"Control"	"Vi|~Search"	"ToggleViMode"
+"Y"	"Control"	"Vi|~Search"	"ScrollLineUp"
+"E"	"Control"	"Vi|~Search"	"ScrollLineDown"
+"G"		"Vi|~Search"	"ScrollToTop"
+"G"	"Shift"	"Vi|~Search"	"ScrollToBottom"
+"B"	"Control"	"Vi|~Search"	"ScrollPageUp"
+"F"	"Control"	"Vi|~Search"	"ScrollPageDown"
+"U"	"Control"	"Vi|~Search"	"ScrollHalfPageUp"
+"D"	"Control"	"Vi|~Search"	"ScrollHalfPageDown"
+"Y"		"Vi|~Search"	"Copy"
+"Y"		"Vi|~Search"	"ClearSelection"
+"Copy"		"Vi|~Search"	"ClearSelection"
+"V"		"Vi|~Search"	"ToggleNormalSelection"
+"V"	"Shift"	"Vi|~Search"	"ToggleLineSelection"
+"V"	"Control"	"Vi|~Search"	"ToggleBlockSelection"
+"V"	"Alt"	"Vi|~Search"	"ToggleSemanticSelection"
+"Enter"		"Vi|~Search"	"Open"
+"Z"		"Vi|~Search"	"CenterAroundViCursor"
+"F"		"Vi|~Search"	"InlineSearchForward"
+"F"	"Shift"	"Vi|~Search"	"InlineSearchBackward"
+"T"		"Vi|~Search"	"InlineSearchForwardShort"
+"T"	"Shift"	"Vi|~Search"	"InlineSearchBackwardShort"
+";"		"Vi|~Search"	"InlineSearchNext"
+","		"Vi|~Search"	"InlineSearchPrevious"
+"K"		"Vi|~Search"	"Up"
+"J"		"Vi|~Search"	"Down"
+"H"		"Vi|~Search"	"Left"
+"L"		"Vi|~Search"	"Right"
+"ArrowUp"		"Vi|~Search"	"Up"
+"ArrowDown"		"Vi|~Search"	"Down"
+"ArrowLeft"		"Vi|~Search"	"Left"
+"ArrowRight"		"Vi|~Search"	"Right"
+"0"		"Vi|~Search"	"First"
+"$"	"Shift"	"Vi|~Search"	"Last"
+"^"	"Shift"	"Vi|~Search"	"FirstOccupied"
+"H"	"Shift"	"Vi|~Search"	"High"
+"M"	"Shift"	"Vi|~Search"	"Middle"
+"L"	"Shift"	"Vi|~Search"	"Low"
+"B"		"Vi|~Search"	"SemanticLeft"
+"W"		"Vi|~Search"	"SemanticRight"
+"E"		"Vi|~Search"	"SemanticRightEnd"
+"B"	"Shift"	"Vi|~Search"	"WordLeft"
+"W"	"Shift"	"Vi|~Search"	"WordRight"
+"E"	"Shift"	"Vi|~Search"	"WordRightEnd"
+"%"	"Shift"	"Vi|~Search"	"Bracket"
+"/"		"Vi|~Search"	"SearchForward"
+"?"	"Shift"	"Vi|~Search"	"SearchBackward"
+"N"		"Vi|~Search"	"SearchNext"
+"N"	"Shift"	"Vi|~Search"	"SearchPrevious"
+Search Mode
+key	mods	mode	action
+"Enter"		"Search|Vi"	"SearchConfirm"
+"Escape"		"Search"	"SearchCancel"
+"C"	"Control"	"Search"	"SearchCancel"
+"U"	"Control"	"Search"	"SearchClear"
+"W"	"Control"	"Search"	"SearchDeleteWord"
+"P"	"Control"	"Search"	"SearchHistoryPrevious"
+"N"	"Control"	"Search"	"SearchHistoryNext"
+"ArrowUp"		"Search"	"SearchHistoryPrevious"
+"ArrowDown"		"Search"	"SearchHistoryNext"
+"Enter"		"Search|~Vi"	"SearchFocusNext"
+Windows, Linux, and BSD only
+key	mods	mode	action
+"V"	"Control|Shift"	"~Vi"	"Paste"
+"V"	"Control|Shift"	"Vi|Search"	"Paste"
+"C"	"Control|Shift"		"Copy"
+"F"	"Control|Shift"	"~Search"	"SearchForward"
+"B"	"Control|Shift"	"~Search"	"SearchBackward"
+"C"	"Control|Shift"	"Vi|~Search"	"ClearSelection"
+"Insert"	"Shift"		"PasteSelection"
+"0"	"Control"		"ResetFontSize"
+"="	"Control"		"IncreaseFontSize"
+"+"	"Control"		"IncreaseFontSize"
+"NumpadAdd"	"Control"		"IncreaseFontSize"
+"-"	"Control"		"DecreaseFontSize"
+"NumpadSubtract"	"Control"		"DecreaseFontSize"
+Windows only
+key	mods	mode	action
+"Enter"	"Alt"		"ToggleFullscreen"
+macOS only
+key	mods	mode	action / chars
+"K"	"Command"	"~Vi|~Search"	chars: "\u000c"
+"K"	"Command"	"~Vi|~Search"	"ClearHistory"
+"0"	"Command"		"ResetFontSize"
+"="	"Command"		"IncreaseFontSize"
+"+"	"Command"		"IncreaseFontSize"
+"NumpadAdd"	"Command"		"IncreaseFontSize"
+"-"	"Command"		"DecreaseFontSize"
+"NumpadSubtract"	"Command"		"DecreaseFontSize"
+"V"	"Command"	"~Vi"	"Paste"
+"V"	"Command"	"Vi|Search"	"Paste"
+"C"	"Command"		"Copy"
+"C"	"Command"	"Vi|~Search"	"ClearSelection"
+"H"	"Command"		"Hide"
+"H"	"Command|Alt"		"HideOtherApplications"
+"M"	"Command"		"Minimize"
+"Q"	"Command"		"Quit"
+"W"	"Command"		"Quit"
+"N"	"Command"		"CreateNewWindow"
+"T"	"Command"		"CreateNewTab"
+"F"	"Command|Control"		"ToggleFullscreen"
+"F"	"Command"	"~Search"	"SearchForward"
+"B"	"Command"	"~Search"	"SearchBackward"
+"]"	"Command|Shift"		"SelectNextTab"
+"["	"Command|Shift"		"SelectPreviousTab"
+"Tab"	"Command"		"SelectNextTab"
+"Tab"	"Command|Shift"		"SelectPreviousTab"
+"1"	"Command"		"SelectTab1"
+"2"	"Command"		"SelectTab2"
+"3"	"Command"		"SelectTab3"
+"4"	"Command"		"SelectTab4"
+"5"	"Command"		"SelectTab5"
+"6"	"Command"		"SelectTab6"
+"7"	"Command"		"SelectTab7"
+"8"	"Command"		"SelectTab8"
+"9"	"Command"		"SelectLastTab"
+SEE ALSO
+alacritty(1), alacritty-msg(1), alacritty(5)
+
+BUGS
+Found a bug? Please report it at https://github.com/alacritty/alacritty/issues.
+
+MAINTAINERS
+· Christian Duerr <contact@christianduerr.com>
+
+· Kirill Chibisov <contact@kchibisov.com>
