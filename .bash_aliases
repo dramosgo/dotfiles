@@ -22,4 +22,4 @@ alias shutdown='sudo shutdown'
 
 #alias lf=lfrun
 
-alias git-bare=' git --git-dir=$HOME/dot2git --work-tree=$HOME'
+alias git-bare='git --git-dir=$HOME/dot2git --work-tree=$HOME'
